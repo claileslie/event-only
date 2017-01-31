@@ -3,3 +3,7 @@ locations#show page
 <h1><%= @location.name %></h1>
 
 <%= render @location %>
+
+<%= link_to 'Edit', edit_location_path %>
+
+| <%= link_to 'Delete', delete_location_path %>
