@@ -1,0 +1,10 @@
+<h1>All events for <%=@location.name %></h1>
+
+<div class ="events">
+<% @events.each do |event| %>
+  <h3>Event: <%= event.name %></h3>
+  <p><%= event.date %></p><br  />
+  <p><%= event.capacity %></p><br  />
+  <p><%= link_to 'View Event Page', [@location, event] %></p>
+  <% end %>
+</div>

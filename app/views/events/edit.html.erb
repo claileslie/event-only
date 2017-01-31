@@ -1,1 +1,5 @@
 events#edit page
+
+<h1>Edit <%=link_to @event.name, @events %></h1>
+
+<%= render 'form', event: @event %>

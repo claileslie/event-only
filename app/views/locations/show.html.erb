@@ -7,3 +7,7 @@ locations#show page
 <%= link_to 'Edit', edit_location_path %>
 
 | <%= link_to 'Delete', location_path, method: :delete, data: {confirm: "Are you sure you want to delete the location '#{@location.name}'? This cannot be undone!"}  %>
+
+<h3><%= link_to 'New Event', new_location_event_path(@location) %></h3>
+
+<h2><%= link_to 'Events', location_events_path(@location) %></h2>
